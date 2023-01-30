@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Examen_AFVKotlin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Matricular -->
+    <string name="edID">Introduce el ID del alumno</string>
+    <string name="ednombre">Introduce el nombre del alumno</string>
+    <string name="edapellid">Introduce el apellido del alumno</string>
+    <string name="edmedia">Introduce la media del alumno</string>
+    <string name="edcontenido">Introduce el contenido para listar</string>
+    <string name="opcion">Elige una opción</string>
+    <string name="id">Id</string>
+    <string name="todos">Todos</string>
+
+</resources>

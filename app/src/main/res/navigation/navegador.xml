@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/matricularFragment"
+        android:name="com.example.examen_afvkotlin.fragmentos.MatricularFragment"
+        android:label="fragment_matricular"
+        tools:layout="@layout/fragment_matricular" >
+        <action
+            android:id="@+id/action_matricularFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.examen_afvkotlin.fragmentos.InicioFragment"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicioFragment_to_matricularFragment2"
+            app:destination="@id/matricularFragment" />
+        <action
+            android:id="@+id/action_inicioFragment_to_editarFragment2"
+            app:destination="@id/editarFragment2" />
+        <action
+            android:id="@+id/action_inicioFragment_to_borrarFragment"
+            app:destination="@id/borrarFragment" />
+        <action
+            android:id="@+id/action_inicioFragment_to_listarFragment"
+            app:destination="@id/listarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarFragment2"
+        android:name="com.example.examen_afvkotlin.fragmentos.EditarFragment"
+        android:label="fragment_editar"
+        tools:layout="@layout/fragment_editar" >
+        <action
+            android:id="@+id/action_editarFragment2_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/borrarFragment"
+        android:name="com.example.examen_afvkotlin.fragmentos.BorrarFragment"
+        android:label="fragment_borrar"
+        tools:layout="@layout/fragment_borrar" >
+        <action
+            android:id="@+id/action_borrarFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listarFragment"
+        android:name="com.example.examen_afvkotlin.fragmentos.ListarFragment"
+        android:label="fragment_listar"
+        tools:layout="@layout/fragment_listar" >
+        <action
+            android:id="@+id/action_listarFragment_to_listadoFragment2"
+            app:destination="@id/listadoFragment2" />
+        <action
+            android:id="@+id/action_listarFragment_to_inicioFragment"
+            app:destination="@id/inicioFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listadoFragment2"
+        android:name="com.example.examen_afvkotlin.fragmentos.ListadoFragment"
+        android:label="fragment_listado"
+        tools:layout="@layout/fragment_listado" />
+</navigation>
